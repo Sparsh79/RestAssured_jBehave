@@ -28,7 +28,25 @@
             <version>4.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.tapack/allure-jbehave-reporter -->
+        <dependency>
+            <groupId>io.tapack</groupId>
+            <artifactId>allure-jbehave-reporter</artifactId>
+            <version>0.1</version>
+        </dependency>
+
     </dependencies>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-maven</artifactId>
+                    <version>2.10.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
