@@ -20,7 +20,7 @@ public class DemoSteps {
     }
 
     @When("I set the request body and make a POST request")
-    public void I_set_the_request_body_and_make_a_POST_request(){
+    public void I_set_the_request_body_and_make_a_POST_request() {
         RequestSpecification httpRequest = RestAssured.given();
         //setting request body
         JSONObject requestParams = new JSONObject();
@@ -37,11 +37,11 @@ public class DemoSteps {
     }
 
     @Then("I assert the successful status code, 201")
-    public void I_assert_the_successful_status_code_201(){
+    public void I_assert_the_successful_status_code_201() {
         response.prettyPrint();
         // to capture response code through getStatusCode method.
         int status = response.getStatusCode();
 
-        Assert.assertEquals(201,status);
+        Assert.assertEquals(201, status);
     }
 }
